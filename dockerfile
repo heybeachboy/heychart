@@ -4,6 +4,7 @@ MAINTAINER Razil "google@gmail.com"
 WORKDIR $GOPATH/src/heychart
 ADD . $GOPATH/src/heychart
 RUN go get github.com/gin-gonic/gin
+RUN go get github.com/gorilla/websocket
 RUN go build .
 
 EXPOSE 9090
