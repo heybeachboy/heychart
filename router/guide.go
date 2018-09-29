@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"vesyncmqtt/src/github.com/robvdl/pongo2gin"
+	"github.com/robvdl/pongo2gin"
 	"heychart/controller"
 )
 
