@@ -6,7 +6,10 @@ import (
 )
 
 func RegisterRoute(route *gin.Engine) {
-	 route.GET("/",controller.TestFunction)
+	 route.LoadHTMLFiles("template/**/*")
+	 route.GET("/",controller.Home)
+	 route.GET("/ws",controller.WebsocketServer)
+	// route.GET("/",controller.TestFunction)
 
 
 }
