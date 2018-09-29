@@ -12,7 +12,7 @@ func RegisterRoute(route *gin.Engine) {
 	 cfg.AllowAllOrigins = true
 	 route.Use(cors.Default())
 	 route.GET("/",controller.Home)
-	 route.GET("/ws",controller.WebsocketServer)
+	 route.GET("/ws",controller.WebSocketServer)
 	// route.GET("/",controller.TestFunction)
 
 

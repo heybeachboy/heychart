@@ -40,7 +40,8 @@ func TestFunction(request *gin.Context) {
 
 }
 
-func WebsocketServer(r *gin.Context) {
+func WebSocketServer(r *gin.Context) {
+	r.Request.Header.Del("Origin")
 	serveWs(hub, r.Writer, r.Request)
 
 }
